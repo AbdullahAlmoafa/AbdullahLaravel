@@ -15,14 +15,15 @@
 	<title>Basic Inputs | AdminKit Demo</title>
 
 	<link href="css/app.css" rel="stylesheet">
+	<!-- {{ asset('css/app.css') }} -->
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
-
+   @include('layouts.sidebar')
 		<div class="main">
-
+    @include('layouts.header')
 			<main class="content">
 				<div class="container-fluid p-0">
 
@@ -55,37 +56,37 @@
 								<div class="card-body">
 									<div>
 										<label class="form-check">
-											<input class="form-check-input" type="checkbox" value="">
-											<span class="form-check-label">
-												Option one is this and that&mdash;be sure to include why it's great
-											</span>
-										</label>
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              Option one is this and that&mdash;be sure to include why it's great
+            </span>
+          </label>
 										<label class="form-check">
-											<input class="form-check-input" type="checkbox" value="" disabled>
-											<span class="form-check-label">
-												Option two is disabled
-											</span>
-										</label>
+            <input class="form-check-input" type="checkbox" value="" disabled>
+            <span class="form-check-label">
+              Option two is disabled
+            </span>
+          </label>
 									</div>
 									<div>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" value="option1">
-											<span class="form-check-label">
-												1
-											</span>
-										</label>
+            <input class="form-check-input" type="checkbox" value="option1">
+            <span class="form-check-label">
+              1
+            </span>
+          </label>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" value="option2">
-											<span class="form-check-label">
-												2
-											</span>
-										</label>
+            <input class="form-check-input" type="checkbox" value="option2">
+            <span class="form-check-label">
+              2
+            </span>
+          </label>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" value="option3" disabled>
-											<span class="form-check-label">
-												3
-											</span>
-										</label>
+            <input class="form-check-input" type="checkbox" value="option3" disabled>
+            <span class="form-check-label">
+              3
+            </span>
+          </label>
 									</div>
 								</div>
 							</div>
@@ -110,43 +111,43 @@
 								<div class="card-body">
 									<div>
 										<label class="form-check">
-											<input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
-											<span class="form-check-label">
-												Option one is this and that&mdash;be sure to include why it's great
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              Option one is this and that&mdash;be sure to include why it's great
+            </span>
+          </label>
 										<label class="form-check">
-											<input class="form-check-input" type="radio" value="option2" name="radios-example">
-											<span class="form-check-label">
-												Option two can be something else and selecting it will deselect option one
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" value="option2" name="radios-example">
+            <span class="form-check-label">
+              Option two can be something else and selecting it will deselect option one
+            </span>
+          </label>
 										<label class="form-check">
-											<input class="form-check-input" type="radio" value="option3" name="radios-example" disabled>
-											<span class="form-check-label">
-												Option three is disabled
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" value="option3" name="radios-example" disabled>
+            <span class="form-check-label">
+              Option three is disabled
+            </span>
+          </label>
 									</div>
 									<div>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="inline-radios-example" value="option1">
-											<span class="form-check-label">
-												1
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option1">
+            <span class="form-check-label">
+              1
+            </span>
+          </label>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="inline-radios-example" value="option2">
-											<span class="form-check-label">
-												2
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option2">
+            <span class="form-check-label">
+              2
+            </span>
+          </label>
 										<label class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="inline-radios-example" value="option3" disabled>
-											<span class="form-check-label">
-												3
-											</span>
-										</label>
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option3" disabled>
+            <span class="form-check-label">
+              3
+            </span>
+          </label>
 									</div>
 								</div>
 							</div>
@@ -181,18 +182,18 @@
 								</div>
 								<div class="card-body">
 									<select class="form-control mb-3">
-										<option selected>Open this select menu</option>
-										<option>One</option>
-										<option>Two</option>
-										<option>Three</option>
-									</select>
+          <option selected>Open this select menu</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
 
 									<select multiple class="form-control">
-										<option>Open this select menu</option>
-										<option>One</option>
-										<option>Two</option>
-										<option>Three</option>
-									</select>
+          <option>Open this select menu</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
 								</div>
 							</div>
 
@@ -208,15 +209,15 @@
 									<div class="mb-3">
 										<label class="form-label">Disabled select menu</label>
 										<select class="form-control" disabled>
-											<option>Disabled select</option>
-										</select>
+            <option>Disabled select</option>
+          </select>
 									</div>
 									<label class="form-check">
-										<input class="form-check-input" type="checkbox" value="" disabled>
-										<span class="form-check-label">
-											Can't check this
-										</span>
-									</label>
+          <input class="form-check-input" type="checkbox" value="" disabled>
+          <span class="form-check-label">
+            Can't check this
+          </span>
+        </label>
 								</div>
 							</div>
 
@@ -233,8 +234,7 @@
 
 				</div>
 			</main>
-
-
+  @include('layouts.footer')
 		</div>
 	</div>
 

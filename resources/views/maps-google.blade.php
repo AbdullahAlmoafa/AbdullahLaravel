@@ -15,16 +15,15 @@
 	<title>Google Maps | AdminKit Demo</title>
 
 	<link href="css/app.css" rel="stylesheet">
+	<!-- {{ asset('css/app.css') }} -->
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
-
-
+  @include('layouts.sidebar')
 		<div class="main">
-
-
+	    @include('layouts.header')
 			<main class="content">
 				<div class="container-fluid p-0">
 
@@ -57,8 +56,7 @@
 
 				</div>
 			</main>
-
-			
+  @include('layouts.footer')
 		</div>
 	</div>
 

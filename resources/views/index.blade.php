@@ -22,10 +22,11 @@
 </head>
 
 <body>
+
 	<div class="wrapper">
+    @include('layouts.sidebar')
 		<div class="main">
-			
-			@include('layouts.side-bar')
+    @include('layouts.header')
 			<main class="content">
 				<div class="container-fluid p-0">
 
@@ -257,8 +258,7 @@
 				</div>
 			</main>
 
-			
-
+  @include('layouts.footer')	
 
 		</div>
 	</div>
