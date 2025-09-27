@@ -15,7 +15,11 @@
         <div class="card">
             <div class="card-header">
                 <h5 class="card-title mb-0">Product List</h5>
+<<<<<<< HEAD
                 <a href="{{ route('admin.products.create') }}" class="btn btn-primary mt-2">Add New Product</a>
+=======
+                <a href="{{ route('products.create') }}" class="btn btn-primary mt-2">Add New Product</a>
+>>>>>>> d2bba448b39fb54a7649c576338c7fed24d6c898
             </div>
             <div class="card-body">
                 <table class="table table-hover my-0">
@@ -34,9 +38,15 @@
                             <td>${{ number_format($product->price, 2) }}</td>
                             <td class="d-none d-md-table-cell">{{ $product->description }}</td>
                             <td>
+<<<<<<< HEAD
                                 <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-sm btn-warning">Edit</a>
                                 <!-- Note: Delete requires a form, we will implement this properly later -->
                                 <form action="{{ route('admin.products.destroy', $product->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this product?');" style="display: inline-block;">
+=======
+                                <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                                <!-- Note: Delete requires a form, we will implement this properly later -->
+                                <form action="{{ route('products.destroy', $product->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this product?');" style="display: inline-block;">
+>>>>>>> d2bba448b39fb54a7649c576338c7fed24d6c898
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
